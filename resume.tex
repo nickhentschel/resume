@@ -4,7 +4,8 @@
 \usepackage{hyperref}
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Helvetica Neue Light}
-\setlist[itemize]{noitemsep, topsep=0pt, label={$\star$}} %, leftmargin=10pt
+\newfontfamily\dingbats[Ligatures=TeX]{Zapf Dingbats}
+\setlist[itemize]{noitemsep, topsep=0pt, label={$\bullet$}} %, leftmargin=10pt
 
 \begin{document}
 \name{\Huge Nick Hentschel}
@@ -12,55 +13,61 @@
 \begin{resume}
 
 \section{EDUCATION}
-  Candidate for Bachelor of Science, Computer Information Systems, May 2014 \\
+  Bachelor of Science, Computer Information Systems, May 2014 \\
   Minor: Law \\
   Bentley University, Waltham, MA \\
   GPA: 3.47 Major GPA: 3.93
 
 \section{HONORS}
 \begin{tabular}{@{}l l}
-All Semesters, 2010 - Present & \textbf{\textit{Dean's List}} \\ [5pt]
+All Semesters, 2010 - 2014 & \textbf{\textit{Dean's List}} \\ [5pt]
 November 2013 & \textbf{\textit{SC13 Student Cluster Competition Commodity Track Champion}} \\ [5pt]
 November 2013 & \textbf{\textit{ISECON Meritorious Paper Award}} \\ [5pt]
 \end{tabular}
 
-\section{COURSES}
-\textit{CS 440 (Advanced Net-Centric Computing)} \hfill Fall 2013
-\begin{itemize}
-    \item In-depth understanding of the planning, design, implementation, and operation of organizational information technology infrastructures
-    \item Covered network and transport layer protocols and related addressing and routing issues at a detailed level
-\end{itemize}
-\textit{CS 420 (Linux System Administration)} \hfill Spring 2012
-\begin{itemize}
-    \item This class covered topics such as shell scripting, file and network manipulation, and system management, including the installation and configuration of software, networking options, storage management, security, user management, etc.
-    \item Personally taught review sessions for exams, and gave a lecture on cluster computing, creating a Beowulf cluster using students' computers and Pelican HPC for demonstration
-\end{itemize}
+% \section{COURSES}
+% \textit{CS 440 (Advanced Net-Centric Computing)} \hfill Fall 2013
+% \begin{itemize}
+%     \item In-depth understanding of the planning, design, implementation, and operation of organizational information technology infrastructures
+%     \item Covered network and transport layer protocols and related addressing and routing issues at a detailed level
+% \end{itemize}
+% \textit{CS 420 (Linux System Administration)} \hfill Spring 2012
+% \begin{itemize}
+%     \item This class covered topics such as shell scripting, file and network manipulation, and system management, including the installation and configuration of software, networking options, storage management, security, user management, etc.
+%     \item Personally taught review sessions for exams, and gave a lecture on cluster computing, creating a Beowulf cluster using students' computers and Pelican HPC for demonstration
+% \end{itemize}
 
- 
 \section{EXPERIENCE}
-\textbf{Tutor,} \textit{CIS Sandbox, Bentley University, Waltham, MA} \hfill 9/12 - Present
+\textbf{Associate Application Developer,} \textit{athenahealth, Watertown, MA} \hfill 8/14 - Present
 \begin{itemize}
-    \item Tutor students in different technical disciplines, ranging from programming to web technologies
-    \item Perform various administrative tasks
-    \item Developed new web-based swipe-in system using Meteor.js
+    \item Helped design and develop custom software in the MIS department of athenahealth
+    \item Added critical features to Client Listening Tool (CLT) Ruby on Rails application, including performance and stability improvements
+    \item Designed and implemented deployment and version control workflow for CLT application, lowering deployment times to under 10 seconds, eliminating downtime, and mitigating key points of failure
+    \item Migrated critical pieces of business infrastructure to new Oracle Express server instances, ensuring stability and reducing department overhead
+\end{itemize}
+\textbf{Tutor,} \textit{CIS Sandbox, Bentley University, Waltham, MA} \hfill 9/12 - 5/14
+\begin{itemize}
+    \item Tutored graduate and undergraduate students in various technical disciplines, including object oriented Java and basic web development concepts
+    \item Performed various administrative tasks
+    \item Designed, developed, and deployed a new web-based student check-in system, decreasing sign-in friction and gathering more accurate data
+    \item Co authored award-winning paper highlighting the success of the Sandbox as an educational environment for both students and tutors
 \end{itemize}
 \textbf{Web Intern,} \textit{User Interface Engineering, North Andover, MA} \hfill 5/13 - 8/13
 \begin{itemize}
-    \item Managed large email campaigns including template development
-    \item Coded responsive conference landing pages using SCSS
-    \item Built a social sharing API using PHP
-    \item Created MySQL database for interpreting user data
+    \item Managed large email campaigns, including custom template development and A/B testing
+    \item Designed and coded responsive conference landing pages using SCSS
+    \item Developed custom social sharing API using PHP and REST concepts
+    \item Created MySQL database allowing the generation of custom marketing cohorts for better customer targeting
 \end{itemize}
 \textbf{Junior Web Developer,} \textit{Polar Design, Woburn, MA} \hfill 6/08 - 8/12
 \begin{itemize}
-    \item Created custom interactive pages using PHP, Javascript, HTML, and CSS
+    \item Coded custom interactive pages using PHP, Javascript, HTML, and CSS
     \item Developed dynamic web sites using SilverStripe and WordPress
-    \item Performed maintenance tasks on both development and production servers
-    \item Trained new interns and designers to properly code standards-compliant HTML and CSS
-    \item Developed mobile sites using jQuery Mobile and SilverStripe
+    \item Performed operations tasks including proper server maintenance and orchestrating deployments from SVN
+    \item Trained new employees and designers to properly code standards-compliant HTML and CSS
+    % \item Created custom mobile sites leveraging jQuery mobile
 \end{itemize}
-% \textbf{Data Analyst, }\textit{Charles River Laboratories, Inc., Wilmington, MA}
-% \hfill 6/08 - 8/08
+% \textbf{Data Analyst, }\textit{Charles River Laboratories, Inc., Wilmington, MA} \hfill 6/08 - 8/08
 % \begin{itemize}
 %     \item Data entry and sanitation using Microsoft Access
 %     \item Error checking in tables
@@ -68,10 +75,8 @@ November 2013 & \textbf{\textit{ISECON Meritorious Paper Award}} \\ [5pt]
 % \end{itemize}
 
 \section{SKILLS}
-\textbf{Languages: }PHP, Java, SQL, JavaScript, HTML5, CSS3, some Python\\
-\textbf{Environment Experience: } Linux (Ubuntu, CentOS, Arch), OS X, Windows\\
-\textbf{Knowledge of: } System Administration, Meteor.js, MongoDB, SCSS,
-Git, Object Oriented Programming, SQL, MySQL, LAMP development, Eclipse IDE
-
+\textbf{Languages: }Javascript {\dingbats ✮✮✮}, PHP {\dingbats ✮✮}, Ruby {\dingbats ✮✮✮}, Java {\dingbats ✮✮}, HTML/CSS {\dingbats ✮✮✮✮} \\
+% \textbf{Administration Experience: } Linux (Ubuntu, CentOS, Arch) \\
+\textbf{Knowledge of: }Linux system administration, Supercomputing, Ruby on Rails, Capistrano, basic networking, various PHP framworks, SCSS, SQL, Version control (Git, SVN)
 \end{resume}
 \end{document}
